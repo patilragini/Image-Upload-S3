@@ -28,7 +28,7 @@ import com.amazonaws.services.s3.model.PutObjectRequest;
 public class FileUploadController {
 	private String S3_BUCKET_NAME = "fundoo-notes-images";
 
-	private AmazonS3 s3Client = new AmazonS3Client(new BasicAWSCredentials("", ""));
+	private AmazonS3 s3Client = new AmazonS3Client(new BasicAWSCredentials("your AK", "your FK"));
 
 	@GetMapping("/")
 	public String fileUploadForm(Model model) {
